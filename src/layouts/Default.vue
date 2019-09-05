@@ -65,7 +65,7 @@
       </nav>
     </header>
     <slot />
-    <footer class="py-8 py-md-11 @@classList">
+    <footer :class="'py-8 py-md-11 '+footerClass">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3">
@@ -140,7 +140,8 @@ export default {
     Facebook,
     Twitter,
     Instagram
-  }
+  },
+  props: ["footerClass"]
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout footerClass="bg-gray-200">
     <!-- WELCOME
     ==================================================-->
     <section class="pt-4 pt-md-11">
@@ -208,6 +208,14 @@
       <!-- / .container -->
     </section>
 
+    <!-- SHAPE
+    ==================================================-->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        <Curve></Curve>
+      </div>
+    </div>
+
     <!-- CTA
     ==================================================-->
     <section class="pt-6 pt-md-8 bg-gray-200">
@@ -236,9 +244,13 @@
 </template>
 
 <script>
+import Curve from "@/assets/img/shapes/curves/curve-1.svg";
 export default {
   metaInfo: {
     title: "Hello, world!"
+  },
+  components: {
+    Curve
   }
 };
 </script>
