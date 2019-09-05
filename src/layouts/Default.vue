@@ -79,38 +79,17 @@
             <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
               <li class="list-inline-item list-social-item mr-3">
                 <a href="#!" class="text-decoration-none">
-                  <img
-                    src="@/assets/img/icons/social/instagram.svg"
-                    class="list-social-icon"
-                    alt="..."
-                  />
+                  <Instagram />
                 </a>
               </li>
               <li class="list-inline-item list-social-item mr-3">
                 <a href="#!" class="text-decoration-none">
-                  <img
-                    src="@/assets/img/icons/social/facebook.svg"
-                    class="list-social-icon"
-                    alt="..."
-                  />
+                  <Facebook />
                 </a>
               </li>
               <li class="list-inline-item list-social-item mr-3">
                 <a href="#!" class="text-decoration-none">
-                  <img
-                    src="@/assets/img/icons/social/twitter.svg"
-                    class="list-social-icon"
-                    alt="..."
-                  />
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item">
-                <a href="#!" class="text-decoration-none">
-                  <img
-                    src="@/assets/img/icons/social/pinterest.svg"
-                    class="list-social-icon"
-                    alt="..."
-                  />
+                  <Twitter alt="..." />
                 </a>
               </li>
             </ul>
@@ -148,6 +127,22 @@ query {
   }
 }
 </static-query>
+
+<script>
+import Facebook from "@/assets/img/icons/social/facebook.svg";
+import Twitter from "@/assets/img/icons/social/twitter.svg";
+import Instagram from "@/assets/img/icons/social/instagram.svg";
+export default {
+  metaInfo: {
+    title: "Hello, world!"
+  },
+  components: {
+    Facebook,
+    Twitter,
+    Instagram
+  }
+};
+</script>
 
 <style>
 </style>
