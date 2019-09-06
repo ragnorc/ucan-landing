@@ -279,16 +279,10 @@ query Home {
 import Curve from "@/assets/img/shapes/curves/curve-1.svg";
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Home | UCAN"
   },
   components: {
     Curve
   }
 };
 </script>
-
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>

@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@contentful/rich-text-html-renderer": "^13.4.0",
     "@gridsome/source-contentful": "^0.4.0",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.3.1",
