@@ -180,9 +180,13 @@
             <!-- Blockquote -->
             <blockquote class="blockquote text-center">
               <!-- Logo -->
-
+              <img
+                style="max-width: 120px"
+                class="mb-5 mb-md-7 mx-auto"
+                :src="$page.home.edges[0].node.firstQuoteImage.file.url"
+              />
               <!-- Text -->
-              <p class="mb-5 mb-md-7"></p>
+              <p class="mb-5 mb-md-7">{{$page.home.edges[0].node.firstQuote}}</p>
 
               <!-- Footer -->
               <footer class="blockquote-footer mb-8 mb-md-0">
@@ -194,8 +198,13 @@
           <div class="col-12 col-md-5 offset-md-1">
             <!-- Blockquote -->
             <blockquote class="blockquote text-center">
+              <img
+                style="max-width: 120px"
+                class="mb-5 mb-md-7 mx-auto"
+                :src="$page.home.edges[0].node.secondQuoteImage.file.url"
+              />
               <!-- Text -->
-              <p class="mb-5 mb-md-7"></p>
+              <p class="mb-5 mb-md-7">{{$page.home.edges[0].node.secondQuote}}</p>
               <!-- Footer -->
               <footer class="blockquote-footer mb-0">
                 <span class="h6 text-uppercase">Jacob M. (Student)</span>
@@ -242,6 +251,29 @@
     </section>
   </Layout>
 </template>
+
+<page-query>
+query Home {
+ home: allContentfulHome {
+  edges {
+    node {
+      firstQuote
+      secondQuote
+      firstQuoteImage {
+        file {
+          url
+        }
+      }
+      secondQuoteImage {
+        file {
+          url
+        }
+      }
+    }
+  }
+}
+}
+</page-query>
 
 <script>
 import Curve from "@/assets/img/shapes/curves/curve-1.svg";
