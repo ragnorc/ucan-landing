@@ -31,7 +31,6 @@ module.exports = {
         exclude: ["/privacy"],
         config: {
           "/blog-post/*": {
-            changefreq: "weekly",
             priority: 1
           },
           "/blog": {
