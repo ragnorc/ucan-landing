@@ -13,7 +13,7 @@ module.exports = {
         space: "yfl4ttznv59t",
         accessToken: "7tiW30--Z-Napzcib4KZ-Wdi_fHugRo-hC52fQS66u0", //process.env.CONTENTFUL_TOKEN,
         host: "cdn.contentful.com",
-        environment: process.env.CONTENTFUL_ENVIRONMENT,
+        // environment: process.env.CONTENTFUL_ENVIRONMENT,
         typename: "Contentful"
       }
     }

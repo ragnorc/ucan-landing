@@ -45,10 +45,10 @@
                 <g-link class="nav-link" id="navbarHome" to="/about">About</g-link>
               </li>
               <li class="nav-item">
-                <g-link class="nav-link" id="navbarHome" to="/about">Services</g-link>
+                <g-link class="nav-link" id="navbarHome" to="/services">Services</g-link>
               </li>
               <li class="nav-item">
-                <g-link class="nav-link" id="navbarHome" to="/about">Bookings</g-link>
+                <g-link class="nav-link" id="navbarHome" to="/bookings">Bookings</g-link>
               </li>
               <li class="nav-item">
                 <g-link class="nav-link" id="navbarHome" to="/blog">Blog</g-link>
@@ -56,10 +56,7 @@
             </ul>
 
             <!-- Button -->
-            <a
-              class="navbar-btn btn btn-sm btn-primary lift ml-auto"
-              href="@@webRoot/apply.html"
-            >Work with us</a>
+            <g-link class="navbar-btn btn btn-sm btn-primary lift ml-auto" to="/apply">Work with us</g-link>
           </div>
         </div>
       </nav>
