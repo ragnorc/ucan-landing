@@ -117,22 +117,11 @@
   </div>
 </template>
 
-<static-query>
-query {
-  metaData {
-    siteName
-  }
-}
-</static-query>
-
 <script>
 import Facebook from "@/assets/img/icons/social/facebook.svg";
 import Twitter from "@/assets/img/icons/social/twitter.svg";
 import Instagram from "@/assets/img/icons/social/instagram.svg";
 export default {
-  metaInfo: {
-    title: "Hello, world!"
-  },
   components: {
     Facebook,
     Twitter,

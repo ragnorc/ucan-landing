@@ -76,7 +76,7 @@ import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 
 export default {
   metaInfo: {
-    title: "Blog | UCAN"
+    title: "Blog"
   },
   methods: {
     richtextToHTML(content) {

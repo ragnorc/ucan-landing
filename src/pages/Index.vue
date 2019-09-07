@@ -279,8 +279,9 @@ query Home {
 import Curve from "@/assets/img/shapes/curves/curve-1.svg";
 export default {
   metaInfo: {
-    title: "Home | UCAN"
+    title: "Personal statements made easy"
   },
+
   components: {
     Curve
   }

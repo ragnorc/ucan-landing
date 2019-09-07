@@ -6,6 +6,13 @@
 
 module.exports = {
   siteName: "UCAN",
+  titleTemplate: "%s | UCAN",
+  siteUrl: "https://ucanetwork.co.uk",
+  icon: {
+    favicon: "./src/assets/img/logos/favicon-32x32.png",
+    touchicon: "./src/assets/img/logos/apple-touch-icon.png"
+  },
+
   plugins: [
     {
       use: "@gridsome/source-contentful",

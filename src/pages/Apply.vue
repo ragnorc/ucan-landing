@@ -283,7 +283,7 @@ import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 
 export default {
   metaInfo: {
-    title: "Apply | UCAN"
+    title: "Apply"
   },
   data: function() {
     return {

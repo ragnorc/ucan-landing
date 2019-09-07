@@ -256,7 +256,7 @@ export default {
       url: "https//ucanetwork.co.uk"
     };
   },
-  metaInfo() {
+  metaInfo: function() {
     return {
       title: this.$page.post.title
     };

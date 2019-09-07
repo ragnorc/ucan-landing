@@ -79,78 +79,60 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-8">
-            <h3 class="mb-4"><strong>The problem</strong></h3>
-            <p>With most undergraduate courses basing admission on the personal statement and grades alone, there is a lot of pressure on students when writing the personal statement. As one of the most important applications they will ever write, it is often a struggle to find the balance between writing creatively with confidence, and academically with humility. This is where UCAN comes in. </p>
-            <h3 class="mb-4 mt-7"><strong>How we can help</strong></h3>
-             <p>We provide support with formulating and refining ideas, prioritising the most relevant material and expressing enthusiasm for your subject. We boast a high success rate, with our students receiving offers from top UK institutions and often gaining a new perspective on their subject in the process. </p>
+            <h3 class="mb-4">
+              <strong>The problem</strong>
+            </h3>
+            <p>With most undergraduate courses basing admission on the personal statement and grades alone, there is a lot of pressure on students when writing the personal statement. As one of the most important applications they will ever write, it is often a struggle to find the balance between writing creatively with confidence, and academically with humility. This is where UCAN comes in.</p>
+            <h3 class="mb-4 mt-7">
+              <strong>How we can help</strong>
+            </h3>
+            <p>We provide support with formulating and refining ideas, prioritising the most relevant material and expressing enthusiasm for your subject. We boast a high success rate, with our students receiving offers from top UK institutions and often gaining a new perspective on their subject in the process.</p>
           </div>
           <div class="col-12 col-md-4">
             <!-- Card -->
             <div class="card shadow-light-lg">
               <div class="card-body">
-              <h3>Our core values</h3>
-              <div class="my-5">
-                <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <h3>Our core values</h3>
+                <div class="my-5">
+                  <div class="d-flex">
+                    <!-- Badge -->
+                    <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
                       <i class="fe fe-check"></i>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="text-gray-800">Fulfilling potential</p>
+                  </div>
+                  <div class="d-flex">
+                    <!-- Badge -->
+                    <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="text-gray-800">Striving for excellence</p>
                   </div>
 
-                  <!-- Text -->
-                  <p class="text-gray-800">
-                      Fulfilling potential
-                  </p>
-
-              </div>
-              <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <div class="d-flex">
+                    <!-- Badge -->
+                    <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
                       <i class="fe fe-check"></i>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="text-gray-800">Sharing information</p>
                   </div>
 
-                  <!-- Text -->
-                  <p class="text-gray-800">
-                      Striving for excellence
-                  </p>
-
-              </div>
-
-              <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <div class="d-flex">
+                    <!-- Badge -->
+                    <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
                       <i class="fe fe-check"></i>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="text-gray-800">Lifelong learning</p>
                   </div>
-
-                  <!-- Text -->
-                  <p class="text-gray-800">
-                      Sharing information
-                  </p>
-
-              </div>
-
-              <div class="d-flex">
-
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                      <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="text-gray-800">
-                      Lifelong learning
-                  </p>
-
-              </div>
-              </div>
-
-
-
-
-
-
+                </div>
               </div>
             </div>
           </div>
@@ -240,7 +222,7 @@ query getAbout {
 <script>
 export default {
   metaInfo: {
-    title: "About | UCAN"
+    title: "About"
   }
 };
 </script>

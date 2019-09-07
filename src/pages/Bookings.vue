@@ -202,7 +202,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Bookings | UCAN"
+    title: "Bookings"
   }
 };
 </script>

@@ -189,7 +189,7 @@ import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 
 export default {
   metaInfo: {
-    title: "Services | UCAN"
+    title: "Services"
   },
   methods: {
     richTextToHTML(content) {
