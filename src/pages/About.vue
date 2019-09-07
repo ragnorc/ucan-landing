@@ -22,20 +22,20 @@
             <!-- Image -->
             <div class="form-row">
               <div class="col-4">
-                <img
+                <g-image
                   src="@/assets/img/photos/woman-library.png"
                   class="img-fluid rounded shadow-lg h-1/2"
                   alt="..."
                 />
               </div>
               <div class="col-3">
-                <img
+                <g-image
                   src="@/assets/img/photos/photo-17.jpg"
                   class="img-fluid rounded shadow-lg mb-4"
                   alt="..."
                 />
 
-                <img
+                <g-image
                   src="@/assets/img/photos/photo-18.jpg"
                   class="img-fluid rounded shadow-lg mt-1"
                   alt="..."
@@ -44,14 +44,14 @@
               <div class="col-5">
                 <div class="form-row mb-4">
                   <div class="col-5">
-                    <img
+                    <g-image
                       src="@/assets/img/photos/photo-19.jpg"
                       class="img-fluid rounded shadow-lg"
                       alt="..."
                     />
                   </div>
                   <div class="col-7">
-                    <img
+                    <g-image
                       src="@/assets/img/photos/photo-20.jpg"
                       class="img-fluid rounded shadow-lg"
                       alt="..."
@@ -60,7 +60,7 @@
                 </div>
                 <!-- / .row -->
 
-                <img
+                <g-image
                   src="@/assets/img/photos/photo-21.jpg"
                   class="img-fluid rounded shadow-lg mt-1"
                   alt="..."
