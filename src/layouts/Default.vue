@@ -51,7 +51,7 @@
                 <g-link class="nav-link" id="navbarHome" to="/about">Bookings</g-link>
               </li>
               <li class="nav-item">
-                <g-link class="nav-link" id="navbarHome" to="/about">Blog</g-link>
+                <g-link class="nav-link" id="navbarHome" to="/blog">Blog</g-link>
               </li>
             </ul>
 
