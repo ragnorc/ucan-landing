@@ -60,28 +60,20 @@
                 <ul class="d-inline list-unstyled list-inline list-social">
                   <li class="list-inline-item list-social-item mr-3">
                     <a
-                      :href="'https://www.facebook.com/sharer/sharer.php?u='+url"
+                      :href="'https://www.facebook.com/sharer/sharer.php?u=https://ucanetwork.co.uk' + this.$page.post.path"
                       target="_blank"
                       class="text-decoration-none"
                     >
-                      <img
-                        src="@/assets/img/icons/social/facebook.svg"
-                        class="list-social-icon"
-                        alt="..."
-                      />
+                      <Facebook />
                     </a>
                   </li>
                   <li class="list-inline-item list-social-item mr-3">
                     <a
-                      :href="'https://twitter.com/intent/tweet?url='+url"
+                      :href="'https://twitter.com/intent/tweet?url=https://ucanetwork.co.uk'+this.$page.post.path"
                       target="_blank"
                       class="text-decoration-none"
                     >
-                      <img
-                        src="@/assets/img/icons/social/twitter.svg"
-                        class="list-social-icon"
-                        alt="..."
-                      />
+                      <Twitter />
                     </a>
                   </li>
                 </ul>
@@ -246,15 +238,14 @@ query getBlogPosts($path: String!){
 <script>
 import Layout from "~/layouts/Default.vue";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+import Facebook from "@/assets/img/icons/social/facebook.svg";
+import Twitter from "@/assets/img/icons/social/twitter.svg";
 
 export default {
   components: {
-    Layout
-  },
-  data: function() {
-    return {
-      url: "https//ucanetwork.co.uk"
-    };
+    Layout,
+    Facebook,
+    Twitter
   },
   metaInfo: function() {
     return {
