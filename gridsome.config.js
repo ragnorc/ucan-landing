@@ -23,6 +23,27 @@ module.exports = {
         // environment: process.env.CONTENTFUL_ENVIRONMENT,
         typename: "Contentful"
       }
+    },
+    {
+      use: "@gridsome/plugin-sitemap",
+      options: {
+        cacheTime: 600000, // default
+        exclude: ["/privacy"],
+        config: {
+          "/blog-post/*": {
+            changefreq: "weekly",
+            priority: 1
+          },
+          "/blog": {
+            changefreq: "weekly",
+            priority: 1
+          },
+          "/services": {
+            changefreq: "monthly",
+            priority: 0.5
+          }
+        }
+      }
     }
   ],
   chainWebpack: config => {

@@ -9,6 +9,7 @@
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^13.4.0",
     "@contentful/rich-text-types": "^13.4.0",
+    "@gridsome/plugin-sitemap": "^0.2.1",
     "@gridsome/source-contentful": "^0.4.0",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.3.1",
