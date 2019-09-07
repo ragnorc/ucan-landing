@@ -1,5 +1,6 @@
 <template>
   <div>
+    <vue-progress-bar></vue-progress-bar>
     <header>
       <nav class="navbar navbar-expand-lg @@classList">
         <div class="container">
@@ -127,7 +128,14 @@ export default {
     Twitter,
     Instagram
   },
-  props: ["footerClass"]
+  props: ["footerClass"],
+  created() {
+    this.$Progress.start();
+  },
+  mounted() {
+    //  [App.vue specific] When Default.vue is finish loading finish the progress bar
+    this.$Progress.finish();
+  }
 };
 </script>
 
