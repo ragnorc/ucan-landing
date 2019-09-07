@@ -7,7 +7,7 @@
         <div class="row align-items-center">
           <div class="col-12 col-md-5 order-md-2">
             <!-- Image -->
-            <img
+            <g-image
               src="@/assets/img/illustrations/illustration-1.png"
               class="img-fluid mb-6 mb-md-0"
               alt="..."
