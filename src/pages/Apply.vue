@@ -289,8 +289,7 @@ export default {
   data: function() {
     return {
       resume_name: "Choose file",
-      ps_name: "Choose file",
-      formData: {}
+      ps_name: "Choose file"
     };
   },
   methods: {
@@ -325,25 +324,6 @@ export default {
     onPSChange(event) {
       var fileData = event.target.files[0];
       this.ps_name = fileData.name;
-    },
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
-    },
-    handleSubmit(e) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({
-          "form-name": e.target.getAttribute("name"),
-          ...this.formData
-        })
-      })
-        .then(() => this.$router.push("/success"))
-        .catch(error => alert(error));
     }
   }
 };
