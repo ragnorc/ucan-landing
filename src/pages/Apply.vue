@@ -99,7 +99,7 @@
             <div class="card card-border border-primary shadow-light-lg">
               <div class="card-body">
                 <!-- Form -->
-                <form name="Application" netlify>
+                <form name="Application" method="post" data-netlify="true">
                   <div class="row">
                     <div class="col-12 col-md-6">
                       <div class="form-group mb-5">
@@ -288,7 +288,8 @@ export default {
   data: function() {
     return {
       resume_name: "Choose file",
-      ps_name: "Choose file"
+      ps_name: "Choose file",
+      formData: {}
     };
   },
   methods: {
@@ -323,6 +324,25 @@ export default {
     onPSChange(event) {
       var fileData = event.target.files[0];
       this.ps_name = fileData.name;
+    },
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
+    },
+    handleSubmit(e) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          "form-name": e.target.getAttribute("name"),
+          ...this.formData
+        })
+      })
+        .then(() => this.$router.push("/success"))
+        .catch(error => alert(error));
     }
   }
 };
