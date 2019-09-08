@@ -2,7 +2,7 @@
   <div>
     <vue-progress-bar></vue-progress-bar>
     <header>
-      <nav class="navbar navbar-expand-lg @@classList">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
           <!-- Brand -->
           <g-link class="navbar-brand" to="/">
@@ -18,12 +18,17 @@
             aria-controls="navbarCollapse"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            v-on:click="showMobileNav = true"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <!-- Collapse -->
-          <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div
+            class="collapse navbar-collapse"
+            v-bind:class="{ show: showMobileNav }"
+            id="navbarCollapse"
+          >
             <!-- Toggler -->
             <button
               class="navbar-toggler"
@@ -33,6 +38,7 @@
               aria-controls="navbarCollapse"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              v-on:click="showMobileNav = false"
             >
               <i class="fe fe-x"></i>
             </button>
@@ -127,6 +133,11 @@ export default {
     Facebook,
     Twitter,
     Instagram
+  },
+  data: function() {
+    return {
+      showMobileNav: false
+    };
   },
   props: ["footerClass"],
   created() {
