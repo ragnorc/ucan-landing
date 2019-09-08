@@ -99,7 +99,8 @@
             <div class="card card-border border-primary shadow-light-lg">
               <div class="card-body">
                 <!-- Form -->
-                <form name="Application" method="post" data-netlify="true">
+                <form name="MentorApplication" method="post" data-netlify="true">
+                  <input type="hidden" name="form-name" value="MentorApplication" />
                   <div class="row">
                     <div class="col-12 col-md-6">
                       <div class="form-group mb-5">
