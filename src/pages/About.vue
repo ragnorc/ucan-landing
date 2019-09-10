@@ -82,11 +82,11 @@
             <h3 class="mb-4">
               <strong>The problem</strong>
             </h3>
-            <p>With most undergraduate courses basing admission on the personal statement and grades alone, there is a lot of pressure on students when writing the personal statement. As one of the most important applications they will ever write, it is often a struggle to find the balance between writing creatively with confidence, and academically with humility. This is where UCAN comes in.</p>
+            <p>With most undergraduate courses basing admission on the personal statement and grades alone, there is a lot of pressure on students when writing the personal statement. As one of the most important applications they will ever write, it is often a struggle to find the balance between writing creatively with confidence, and academically with humility. It is also hard to know exactly what admissions tutors for each subject are looking for. This is where UCAN comes in.</p>
             <h3 class="mb-4 mt-7">
               <strong>How we can help</strong>
             </h3>
-            <p>We provide support with formulating and refining ideas, prioritising the most relevant material and expressing enthusiasm for your subject. We boast a high success rate, with our students receiving offers from top UK institutions and often gaining a new perspective on their subject in the process.</p>
+            <p>We provide support with formulating and refining ideas, prioritising the most relevant material and guiding students through the various stages of the personal statement. We match students applying to university with personalised mentors who specialise in the subject the student is applying for. That way, they get the most relevant feedback on their application from mentors at world-class universities. Boasting a high success rate, our students have received offers from top UK institutions, often gaining a new perspective on their subject in the process.</p>
           </div>
           <div class="col-12 col-md-4">
             <!-- Card -->
