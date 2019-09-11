@@ -31,10 +31,10 @@
 
             <!-- Buttons -->
             <div class="text-center text-md-left">
-              <a href="@@webRoot/bookings.html" class="btn btn-primary shadow lift mr-1">
+              <g-link to="bookings" class="btn btn-primary shadow lift mr-1">
                 Get a free quote now
                 <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
-              </a>
+              </g-link>
             </div>
           </div>
         </div>
