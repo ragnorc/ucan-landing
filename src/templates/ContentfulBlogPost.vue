@@ -226,8 +226,8 @@ export default {
         },
         {
           key: "twitter:card",
-          name="twitter:card",
-          content="summary_large_image"
+          name: "twitter:card",
+          content: "summary_large_image"
         }
       ]
     };
