@@ -213,6 +213,21 @@ export default {
           key: "og:image",
           property: "og:image",
           content: this.$page.post.image.file.url
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content: this.$page.post.description
+        },
+        {
+          key: "twitter:image",
+          name: "twitter:image",
+          content: this.$page.post.image.file.url
+        },
+        {
+          key: "twitter:card",
+          name="twitter:card",
+          content="summary_large_image"
         }
       ]
     };
