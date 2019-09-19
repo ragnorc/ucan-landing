@@ -197,7 +197,15 @@ export default {
   },
   metaInfo: function() {
     return {
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      meta: [
+        { key: "og:title", name: "og:title", content: this.$page.post.title },
+        {
+          key: "og:image",
+          name: "og:image",
+          content: this.$page.post.image.file.url
+        }
+      ]
     };
   },
   methods: {
