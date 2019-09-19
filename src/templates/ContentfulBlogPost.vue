@@ -157,6 +157,11 @@ query getBlogPosts($path: String!){
     title
     author
     path
+    image {
+          file {
+            url
+          }
+        }
     createdAt
     content
     description
