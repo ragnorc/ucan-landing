@@ -204,10 +204,14 @@ export default {
     return {
       title: this.$page.post.title,
       meta: [
-        { key: "og:title", name: "og:title", content: this.$page.post.title },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: this.$page.post.title
+        },
         {
           key: "og:image",
-          name: "og:image",
+          property: "og:image",
           content: this.$page.post.image.file.url
         }
       ]
