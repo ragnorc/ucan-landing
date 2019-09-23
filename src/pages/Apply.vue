@@ -99,7 +99,12 @@
             <div class="card card-border border-primary shadow-light-lg">
               <div class="card-body">
                 <!-- Form -->
-                <form name="MentorApplication" method="post" data-netlify="true">
+                <form
+                  name="MentorApplication"
+                  method="post"
+                  enctype="multipart/form-data"
+                  data-netlify="true"
+                >
                   <input type="hidden" name="form-name" value="MentorApplication" />
                   <div class="row">
                     <div class="col-12 col-md-6">
@@ -241,8 +246,12 @@
                   <div class="row align-items-center">
                     <div class="col-12 col-md">
                       <!-- Submit -->
-                      <button type="submit" class="btn btn-primary mb-6 mb-md-0 lift">
-                        Apply now
+                      <button
+                        type="submit"
+                        v-on:click="submitText = 'Submitting ...'"
+                        class="btn btn-primary mb-6 mb-md-0 lift"
+                      >
+                        {{submitText}}
                         <i class="fe fe-arrow-right ml-3"></i>
                       </button>
                     </div>
@@ -289,7 +298,8 @@ export default {
   data: function() {
     return {
       resume_name: "Choose file",
-      ps_name: "Choose file"
+      ps_name: "Choose file",
+      submitText: "Apply now"
     };
   },
   methods: {
