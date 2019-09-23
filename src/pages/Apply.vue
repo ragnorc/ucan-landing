@@ -248,7 +248,7 @@
                       <!-- Submit -->
                       <button
                         type="submit"
-                        v-on:click="submitText = 'Submitting ...'"
+                        v-on:click="submitText = 'Submitting. Please wait ...'"
                         class="btn btn-primary mb-6 mb-md-0 lift"
                       >
                         {{submitText}}
