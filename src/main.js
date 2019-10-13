@@ -29,6 +29,8 @@ export default function(Vue, { router, head, isClient }) {
     inverse: false
   });
 
+  head.htmlAttrs = { lang: "en", prefix: "og: http://ogp.me/ns#" };
+
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
   Vue.component("Curve1", Curve1);
