@@ -212,7 +212,7 @@ export default {
         {
           key: "og:image",
           property: "og:image",
-          content: this.$page.post.image.file.url
+          content: "https:" + this.$page.post.image.file.url
         },
         {
           key: "og:description",
