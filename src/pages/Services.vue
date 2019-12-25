@@ -56,11 +56,13 @@
 
                 <div class="col-12 order-md-1">
                   <!-- Body -->
-                  <a class="card-body" href="#!">
+                  <div class="card-body flex justify-center">
                     <h3>{{node.title}}</h3>
 
                     <div v-html="richTextToHTML(node.content)"></div>
-                  </a>
+
+                    <button class="btn btn-primary text-white lift mt-5" @click="checkout">Book now</button>
+                  </div>
                   <!-- 
            
                   <a class="card-meta" href="#!">
@@ -191,6 +193,7 @@ export default {
   metaInfo: {
     title: "Services"
   },
+
   methods: {
     richTextToHTML(content) {
       return documentToHtmlString(content, {
@@ -215,6 +218,25 @@ export default {
           }
         }
       });
+    },
+    checkout() {
+      //console.log(this.$refs);
+      //this.$refs.checkoutRef.redirectToCheckout();
+      var stripe = Stripe("pk_live_Xt3bHlT7GplAz7DfhatLOhia00ZaJvH2VM");
+      stripe
+        .redirectToCheckout({
+          items: [
+            // Replace with the ID of your SKU
+            { sku: "sku_GQTviVJYxPeCYD", quantity: 1 }
+          ],
+          successUrl: "https://ucanetwork.co.uk",
+          cancelUrl: "https://ucanetwork.co.uk"
+        })
+        .then(function(result) {
+          // If `redirectToCheckout` fails due to a browser or network
+          // error, display the localized error message to your customer
+          // using `result.error.message`.
+        });
     }
   }
 };

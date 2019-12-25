@@ -14,6 +14,10 @@ export default function(Vue, { router, head, isClient }) {
     src: "//code.tidio.co/6f7ybszsorm7ovsbqg1k6dhjjovlkkgn.js",
     body: true
   });
+  head.script.push({
+    src: "https://js.stripe.com/v3/",
+    body: true
+  });
 
   Vue.use(VueProgressBar, {
     color: "#236B79",
