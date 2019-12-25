@@ -61,7 +61,10 @@
 
                     <div v-html="richTextToHTML(node.content)"></div>
 
-                    <button class="btn btn-primary text-white lift mt-5" @click="checkout">Book now</button>
+                    <button
+                      class="btn btn-primary text-white lift mt-5"
+                      @click="checkout(node.sku)"
+                    >Book now</button>
                   </div>
                   <!-- 
            
@@ -179,6 +182,7 @@ query getPackages {
       packageInfo
       title
       content
+      sku
     }
   }
 }
@@ -219,15 +223,13 @@ export default {
         }
       });
     },
-    checkout() {
-      //console.log(this.$refs);
-      //this.$refs.checkoutRef.redirectToCheckout();
+    checkout(sku) {
       var stripe = Stripe("pk_live_Xt3bHlT7GplAz7DfhatLOhia00ZaJvH2VM");
       stripe
         .redirectToCheckout({
           items: [
             // Replace with the ID of your SKU
-            { sku: "sku_GQTviVJYxPeCYD", quantity: 1 }
+            { sku, quantity: 1 }
           ],
           successUrl: "https://ucanetwork.co.uk",
           cancelUrl: "https://ucanetwork.co.uk"
