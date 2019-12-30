@@ -61,10 +61,11 @@
 
                     <div v-html="richTextToHTML(node.content)"></div>
 
-                    <button
+                    <g-link
                       class="btn btn-primary text-white lift mt-5"
-                      @click="checkout(node.sku)"
-                    >Book now</button>
+                      :to="'/bookings?package='
+                      +node.sku"
+                    >Book now</g-link>
                   </div>
                   <!-- 
            

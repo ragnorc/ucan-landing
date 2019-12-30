@@ -94,7 +94,12 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-12 col-lg-10">
             <!-- Form -->
-            <form name="Booking" method="post" data-netlify="true">
+            <form
+              name="Booking"
+              method="post"
+              :action="'/bookings/success?package='+selectedPackage"
+              data-netlify="true"
+            >
               <input type="hidden" name="form-name" value="Booking" />
               <div class="row">
                 <div class="col-12 col-md-6">
@@ -149,6 +154,22 @@
                 <div class="col-12 col-md-6">
                   <div class="form-group mb-5">
                     <!-- Label -->
+                    <label for="parentName">Package</label>
+
+                    <select name="Package" v-model="selectedPackage" class="form-control">
+                      <option value selected disabled hidden>Choose package</option>
+                      <option value="sku_GQTviVJYxPeCYD">Personal statement review</option>
+                      <option value="sku_GQVqvFuxih9vRV">Research & selection consultation</option>
+                      <option value="sku_GQVtQ2Ab0QTqfc">Pre-application consultation</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group mb-5">
+                    <!-- Label -->
                     <label for="email">Email</label>
 
                     <!-- Input -->
@@ -161,11 +182,6 @@
                       placeholder="hello@gmail.com"
                     />
                   </div>
-                </div>
-              </div>
-              <!-- / .row -->
-              <div class="row">
-                <div class="col-12">
                   <div class="form-group mb-7 mb-md-9">
                     <!-- Label -->
                     <label for="contactMessage">Message</label>
@@ -204,6 +220,12 @@
 export default {
   metaInfo: {
     title: "Bookings"
+  },
+  methods: {},
+  data() {
+    return {
+      selectedPackage: this.$route.query.package || ""
+    };
   }
 };
 </script>
