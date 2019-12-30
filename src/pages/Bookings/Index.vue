@@ -95,9 +95,9 @@
           <div class="col-12 col-md-12 col-lg-10">
             <!-- Form -->
             <form
+              @submit.prevent="handleFormSubmit"
               name="Booking"
               method="post"
-              :action="'/bookings/success?package='+selectedPackage"
               data-netlify="true"
             >
               <input type="hidden" name="form-name" value="Booking" />
@@ -221,7 +221,23 @@ export default {
   metaInfo: {
     title: "Bookings"
   },
-  methods: {},
+  methods: {
+    async handleFormSubmit($event) {
+      const form = $event.target;
+      const body = new URLSearchParams(new FormData(form));
+      try {
+        const res = await fetch(form.action, { method: "POST", body });
+        if (res.ok) {
+          this.$router.push("/bookings/success");
+        } else {
+          throw res;
+        }
+      } catch (err) {
+        console.error(err);
+        // you don't have an error page but maybe you should add one
+      }
+    }
+  },
   data() {
     return {
       selectedPackage: this.$route.query.package || ""

@@ -10,10 +10,7 @@
             <h1 class="display-2">Thanks for your booking!</h1>
 
             <!-- Text -->
-            <button
-              class="btn btn-primary text-white lift mt-5"
-              @click="checkout(this.$route.query.package)"
-            >Pay now</button>
+            <button class="btn btn-primary text-white lift mt-5" @click="checkout">Pay now</button>
           </div>
         </div>
         <!-- / .row -->
@@ -28,7 +25,26 @@
 <script>
 export default {
   metaInfo: {
-    title: "About"
+    title: "Thanks for yout booking!"
+  },
+  methods: {
+    checkout() {
+      var stripe = Stripe("pk_live_Xt3bHlT7GplAz7DfhatLOhia00ZaJvH2VM");
+      stripe
+        .redirectToCheckout({
+          items: [
+            // Replace with the ID of your SKU
+            { sku: this.$route.query.package, quantity: 1 }
+          ],
+          successUrl: "https://ucanetwork.co.uk",
+          cancelUrl: "https://ucanetwork.co.uk"
+        })
+        .then(function(result) {
+          // If `redirectToCheckout` fails due to a browser or network
+          // error, display the localized error message to your customer
+          // using `result.error.message`.
+        });
+    }
   }
 };
 </script>

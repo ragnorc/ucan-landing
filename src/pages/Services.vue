@@ -223,23 +223,6 @@ export default {
           }
         }
       });
-    },
-    checkout(sku) {
-      var stripe = Stripe("pk_live_Xt3bHlT7GplAz7DfhatLOhia00ZaJvH2VM");
-      stripe
-        .redirectToCheckout({
-          items: [
-            // Replace with the ID of your SKU
-            { sku, quantity: 1 }
-          ],
-          successUrl: "https://ucanetwork.co.uk",
-          cancelUrl: "https://ucanetwork.co.uk"
-        })
-        .then(function(result) {
-          // If `redirectToCheckout` fails due to a browser or network
-          // error, display the localized error message to your customer
-          // using `result.error.message`.
-        });
     }
   }
 };
