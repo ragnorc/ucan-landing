@@ -160,7 +160,7 @@
                       <option value selected disabled hidden>Choose package</option>
                       <option value="sku_GQTviVJYxPeCYD">Personal statement review</option>
                       <option value="sku_GQVqvFuxih9vRV">Research & selection consultation</option>
-                      <option value="sku_GQVtQ2Ab0QTqfc">Pre-application consultation</option>
+                      <option value="sku_GSckdd5N5bWgM8">Pre-application consultation</option>
                     </select>
                   </div>
                 </div>
