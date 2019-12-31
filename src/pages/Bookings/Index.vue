@@ -228,7 +228,9 @@ export default {
       try {
         const res = await fetch(form.action, { method: "POST", body });
         if (res.ok) {
-          this.$router.push("/bookings/success?package=" + selectedPackage);
+          this.$router.push(
+            "/bookings/success?package=" + this.selectedPackage
+          );
         } else {
           throw res;
         }
