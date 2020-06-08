@@ -13,7 +13,7 @@
     "@gridsome/source-contentful": "0.4.0",
     "boostrap": "2.0.0",
     "bootstrap": "4.3.1",
-    "gridsome": "0.6.0",
+    "gridsome": "0.7.17",
     "vue-progressbar": "0.7.5",
     "vue-svg-loader": "0.12.0"
   },
