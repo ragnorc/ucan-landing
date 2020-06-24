@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@contentful/rich-text-html-renderer": "13.4.0",
+    "@contentful/rich-text-html-renderer": "14.1.1",
     "@contentful/rich-text-types": "13.4.0",
     "@gridsome/plugin-sitemap": "0.2.1",
     "@gridsome/source-contentful": "0.4.0",
