@@ -112,7 +112,10 @@
               </div>
               <div class="text-center mx-4">
                 <!-- Heading -->
+                <g-link to="/privacy">
+
                 <h6 class="font-weight-bold text-uppercase text-gray-700">Privacy Policy</h6>
+               </g-link>
               </div>
             </div>
           </div>
